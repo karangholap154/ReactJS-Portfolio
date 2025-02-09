@@ -10,7 +10,7 @@ export const Qualification = () => {
     }
 
   return (
-    <section className='services section' id='services'>
+    <section className='qualification section' id='qualification'>
         <h2 className='section__title'>Qualification</h2>
         <span className='section__subtitle'>My Personal Journey</span>
 
