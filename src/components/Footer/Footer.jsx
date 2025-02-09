@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer className='footer'>
         <div className='footer__container container'>
-            <h1 className='footer__title'>Karan</h1>
+            {/* <h1 className='footer__title'>Karan</h1>
 
             <ul className='footer__list'>
                 <li>
@@ -31,9 +31,9 @@ export const Footer = () => {
                 <a href='https://twitter.com/' className='footer__social-link' target='_blank'>
                     <i class='bx bxl-twitter'></i>
                 </a>
-            </div>
+            </div> */}
             <span className='footer__copy'>
-                Copyright &#169; 2025 Karan Gholap
+                Made with ❤️ by Karan Gholap
             </span>
         </div>
     </footer>

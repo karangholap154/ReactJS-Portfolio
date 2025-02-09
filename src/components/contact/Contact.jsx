@@ -14,7 +14,7 @@ export const Contact = () => {
         })
         e.target.reset()
     };
-  return (
+    return (
     <section className='contact section' id='contact'>
         <h2 className='section__title'>Get In Touch</h2>
         <span className='section__subtitle'>Contact Me</span>
@@ -27,32 +27,65 @@ export const Contact = () => {
                     <div className='contact__card'>
                         <i className="bx bx-mail-send contact__card-icon"></i>
                         <h5 className='contact__card-title'>Email</h5>
-                        <span className='contact__card-data'>user@gmail.com</span>
+                        <span className='contact__card-data'>karangholap.work@gmail.com</span>
 
-                        <a href="mailto:examplemail@gmail.com.com" className='contact__button'>
-                            Write Me 
+                        <a href="mailto:karangholap.work@gmail.com" className='contact__button' target='_blank'>
+                            Mail Me 
                             <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                         </a>
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-whatsapp contact__card-icon"></i>
-                        <h5 className='contact__card-title'>WhatsApp</h5>
-                        <span className='contact__card-data'>+91 9998887776</span>
+                        <i className="bx bxl-linkedin contact__card-icon"></i>
+                        <h5 className='contact__card-title'>LinkedIn</h5>
+                        <span className='contact__card-data'>in/karangholap</span>
 
-                        <a href="https://api.whatsapp.com/send?phone=62214408789&text=Hello, more information!" className='contact__button'>
-                            Write Me 
+                        <a href="https://www.linkedin.com/in/karangholap/" className='contact__button' target='_blank'>
+                            Connect 
                             <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                         </a>
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-telegram contact__card-icon"></i>
-                        <h5 className='contact__card-title'>Telegram</h5>
-                        <span className='contact__card-data'>fb_user</span>
+                        <i className="bx bxl-twitter contact__card-icon"></i>
+                        <h5 className='contact__card-title'>X(Twitter)</h5>
+                        <span className='contact__card-data'>@karangholap_</span>
 
-                        <a href="https://m.me/crypticalcoder" className='contact__button'>
-                            Write Me 
+                        <a href="https://x.com/karangholap_" className='contact__button' target='_blank'>
+                            Follow 
+                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
+                        </a>
+                    </div>
+
+                    <div className='contact__card'>
+                        <i className="bx bxl-github contact__card-icon"></i>
+                        <h5 className='contact__card-title'>GitHub</h5>
+                        <span className='contact__card-data'>karangholap154</span>
+
+                        <a href="https://github.com/karangholap154" className='contact__button' target='_blank'>
+                            Follow 
+                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
+                        </a>
+                    </div>
+
+                    <div className='contact__card'>
+                        <i className="bx bxl-youtube contact__card-icon"></i>
+                        <h5 className='contact__card-title'>YouTube</h5>
+                        <span className='contact__card-data'>Karan Gholap</span>
+
+                        <a href="https://www.youtube.com/" className='contact__button' target='_blank'>
+                            Subscribe 
+                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
+                        </a>
+                    </div>
+
+                    <div className='contact__card'>
+                        <i className="bx bxl-instagram contact__card-icon"></i>
+                        <h5 className='contact__card-title'>Instagram</h5>
+                        <span className='contact__card-data'>@karangholap</span>
+
+                        <a href="https://www.youtube.com/" className='contact__button' target='_blank'>
+                            Follow 
                             <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                         </a>
                     </div>
@@ -60,7 +93,7 @@ export const Contact = () => {
             </div>
 
             <div className='contact__content'>
-                <h3 className='contact__title'>Write Me Your Project</h3>
+                <h3 className='contact__title'>We’d Love to Hear From You ❤️</h3>
                 <form ref={form} onSubmit={sendEmail} className='contact__form'>
                     <div className='contact__form-div'>
                         <label className='contact__form-tag' for='name'>Name</label>
@@ -71,8 +104,8 @@ export const Contact = () => {
                         <input className='contact__form-input' type='email' name='email' id='email' placeholder='Enter Your Email' required/>
                     </div>
                     <div className='contact__form-div contact__form-area'>
-                        <label className='contact__form-tag' for='project'>Project</label>
-                        <textarea className='contact__form-input' name='project' id='project' cols="30" rows="10" placeholder='Write Your Project' required/>
+                        <label className='contact__form-tag' for='project'>Message</label>
+                        <textarea className='contact__form-input' name='project' id='project' cols="30" rows="10" placeholder='Leave us a message...' required/>
                     </div>
                     <button href='#contact' className='button button--flex'>
                         Send Message
@@ -98,5 +131,5 @@ export const Contact = () => {
             </div>
         </div>
     </section>
-  )
+    )
 }

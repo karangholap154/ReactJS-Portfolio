@@ -15,7 +15,9 @@
 .contact__info {
     display: grid;
     row-gap: 1rem;
-    grid-template-columns: 300px;
+    /* grid-template-columns: 300px; */
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
 }
 
 .contact__card {
@@ -39,6 +41,7 @@
 
 .contact__card-title {
     font-weight: var(--font-medium);
+    color: var(--title-color);
 }
 
 .contact__card-data {
