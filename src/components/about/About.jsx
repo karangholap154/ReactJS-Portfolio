@@ -1,8 +1,9 @@
 import React from 'react'
 import './about.css'
-import AboutImg from "../../assets/about.jpg"
 import CV from "../../assets/John-Cv.pdf"
-import { Info } from './Info'
+import { Background } from './background'
+import { Goals } from './Goals'
+import { Interests } from './Interests'
 
 export const About = () => {
   return (
@@ -10,12 +11,10 @@ export const About = () => {
         <h2 className='section__title'>About Me</h2>
         <span className='section__subtitle'>My Introduction</span>
         <div className="about__container container grid">
-            <img src={AboutImg} alt="" className='about__img' />
 
             <div className="about__data">
-                <Info />
-
-                <p className='about__description'>Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+            <h3 className="about__data-title">Introduction</h3>
+                <p className='about__description'>Hey there! 🎉 I'm a dedicated software engineering student based in Mumbai, India, proudly waving my undergrad cape from the University of Mumbai! 🎓 Since my freshman days, I've delved deep into the world of web development. 💻 My focus lies in crafting websites and applications that seamlessly blend functionality and aesthetics. Oh, and did I mention my love for building full-stack projects.💡 It's a passion that keeps me constantly inspired! 🚀</p>
 
                 <a download="" href={CV} className='button button--flex'>Download CV
                 <svg
@@ -45,6 +44,9 @@ export const About = () => {
                 </svg>
                 </a>
             </div>
+            <Background/>
+            <Goals/>
+            <Interests/>
         </div>
     </section>
   )

@@ -60,7 +60,7 @@ export const Contact = () => {
                     <div className='contact__card'>
                         <i className="bx bxl-github contact__card-icon"></i>
                         <h5 className='contact__card-title'>GitHub</h5>
-                        <span className='contact__card-data'>karangholap154</span>
+                        <span className='contact__card-data'>@karangholap154</span>
 
                         <a href="https://github.com/karangholap154" className='contact__button' target='_blank'>
                             Follow 
@@ -69,11 +69,11 @@ export const Contact = () => {
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-youtube contact__card-icon"></i>
-                        <h5 className='contact__card-title'>YouTube</h5>
-                        <span className='contact__card-data'>Karan Gholap</span>
+                        <i className="bx bxl-medium contact__card-icon"></i>
+                        <h5 className='contact__card-title'>Medium</h5>
+                        <span className='contact__card-data'>@karangholap_</span>
 
-                        <a href="https://www.youtube.com/" className='contact__button' target='_blank'>
+                        <a href="https://medium.com/@karangholap_" className='contact__button' target='_blank'>
                             Subscribe 
                             <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                         </a>
@@ -82,9 +82,9 @@ export const Contact = () => {
                     <div className='contact__card'>
                         <i className="bx bxl-instagram contact__card-icon"></i>
                         <h5 className='contact__card-title'>Instagram</h5>
-                        <span className='contact__card-data'>@karangholap</span>
+                        <span className='contact__card-data'>@karangholap_</span>
 
-                        <a href="https://www.youtube.com/" className='contact__button' target='_blank'>
+                        <a href="https://www.instagram.com/karangholap_/" className='contact__button' target='_blank'>
                             Follow 
                             <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                         </a>
