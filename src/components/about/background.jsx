@@ -19,7 +19,7 @@ export const Background = () => {
         <div className="about__background-item">
           <i className="bx bx-map about__background-icon"></i>
           <span className="about__background-label">Location:</span>
-          <span className="about__background-value">Mumbai, India</span>
+          <span className="about__background-value">Pune, India</span>
         </div>
         <div className="about__background-item">
           <i className="bx bx-chat about__background-icon"></i>

@@ -3,9 +3,9 @@ import React from 'react'
 export const Data = () => {
   return (
     <div className='home__data'>
-        <h1 className='home__title'>Karan Gholap</h1>
-        <h3 className='home__subtitle'>Software Developer</h3>
-        <p className='home__description'>I'm creative developer based in India, and I'm very passionate and dedicated to my work.</p>
+        <h3 className='home__greet'>Namaste!<span class="hand__wave">👋</span></h3>
+        <h1 className='home__title'>I'm Karan Gholap</h1>
+        <p className='home__description'>A passionate student and developer 💻, dedicated to solving problems and assisting others by harnessing the power of software and web development 🌐."</p>
 
         <a href='#contact' className='button button--flex'>
             Say Hello
