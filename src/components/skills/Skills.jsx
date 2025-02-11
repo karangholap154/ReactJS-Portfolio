@@ -1,5 +1,5 @@
 import React from 'react'
-import './Skills.css'
+import './skills.css'
 import { Frontend } from './Frontend'
 import { Backend } from './Backend'
 import { Others } from './Others'
