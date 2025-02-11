@@ -17,7 +17,7 @@
 
 .about__data-title {
     font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1);
 }
 
@@ -45,7 +45,7 @@
 
 .about__background-title {
     font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1);
 }
 
@@ -94,7 +94,7 @@
   
   .about__goals-title {
     font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1);
   }
   
@@ -143,7 +143,7 @@
   
   .about__interests-title {
     font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1);
   }
   
