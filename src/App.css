@@ -48,6 +48,9 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
+  --border-color-light: #ccc;
+  --border-color-dark: #333;
 }
 
 /* Responsive typography */
@@ -63,6 +66,36 @@
   }
 }
 
+
+/* Darkmode styles */
+.darkmode {
+  --body-color: #000;
+  --container-color: #171717;
+  --title-color: #fff;
+  --title-color-dark: #ccc;
+  --text-color: #fff;
+  --border-color: var(--border-color-dark);
+}
+
+.darkmode .section__title {
+  color: var(--title-color);
+}
+
+.darkmode .section__subtitle {
+  color: var(--text-color);
+}
+
+.darkmode .button {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
+.darkmode .button:hover {
+  background-color: var(--title-color-dark);
+}
+
+
+
 /*=============== BASE ===============*/
 * {
   margin: 0;
@@ -72,6 +105,7 @@
 
 html {
   scroll-behavior: smooth;
+  --border-color: var(--border-color-light);
 }
 
 body,
@@ -169,6 +203,8 @@ img {
   align-items: center;
 }
 
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -190,7 +226,7 @@ img {
 /* For medium devices */
 @media screen and (max-width: 768px) {
   body {
-    margin: 0 0 var(--header-height) 0;
+    margin: 0;
   }
 
   .section {

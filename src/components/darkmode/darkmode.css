@@ -1,7 +1,7 @@
-.scrollup {
+.darkmode-button {
     position: fixed;
-    right: 2.5rem;
-    bottom: -20%;
+    bottom: 2rem;
+    left: 2rem;
     background-color: var(--title-color);
     opacity: 0.8;
     padding: 0.3rem 0.75rem;
@@ -10,56 +10,43 @@
     transition: .4s;
 }
 
-.scrollup__icon {
+.darkmode-button:hover {
+    background-color: var(--title-color-dark);
+}
+
+.darkmode-icon {
     font-size: 1.5rem;
     color: var(--container-color);
 }
 
-.scrollup:hover {
-    background-color: var(--title-color-dark);
-}
-
-.show-scroll {
-    bottom: 2rem;
-}
-
 @media screen and (max-width: 992px) {
-    .scrollup {
-        right: 1.75rem;
-    }
-
-    .show-scroll {
+    .darkmode-button {
         bottom: 1.75rem;
+        left: 1.75rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .scrollup {
-        right: 1.5rem;
-    }
-    
-    .show-scroll {
+    .darkmode-button {
         bottom: 1.5rem;
+        left: 1.5rem;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .scrollup {
-        right: 1rem;
-    }
-
-    .show-scroll {
+    .darkmode-button {
         bottom: 1rem;
-}
+        left: 1rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
-    .scrollup {
+    .darkmode-button {
         padding: 0.25rem 0.5rem 0.25rem 0.5rem;
         font-size: 1.25rem;
     }
 
-    .scrollup__icon {
+    .darkmode-icon {
         font-size: 1.25rem;
     }
 }

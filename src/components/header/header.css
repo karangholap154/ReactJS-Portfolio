@@ -5,10 +5,11 @@
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: calc(var(--header-height) + 1rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +56,6 @@
 @media screen and (max-width: 992px) {
     .header {
         top: initial;
-        bottom: 0;
     }
 
     .nav {
@@ -64,9 +64,10 @@
 
     .nav__menu {
         position: fixed;
-        bottom: -100%;
+        top: -100%;
         left: 0;
         width: 100%;
+        height: fit-content;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
@@ -75,7 +76,8 @@
     }
 
     .show-menu {
-        bottom: 0;
+        top: 0;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .nav__list {

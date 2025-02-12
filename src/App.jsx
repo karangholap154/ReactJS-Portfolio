@@ -8,6 +8,7 @@ import { Qualification } from './components/qualification/Qualification';
 import { Contact } from './components/contact/Contact';
 import { Footer } from './components/Footer/Footer';
 import { ScrollUp } from './components/scrollUp/ScrollUp';
+import { Darkmode } from './components/darkmode/Darkmode';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Contact/>
       <Footer />
       <ScrollUp />
+      <Darkmode/>
     </main>
     </>
   );

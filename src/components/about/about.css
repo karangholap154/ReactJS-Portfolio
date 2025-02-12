@@ -28,7 +28,7 @@
 
 .about__data {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 1.5rem;
 
@@ -38,7 +38,7 @@
 
 .about__background {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 1.5rem;
 }
@@ -87,7 +87,7 @@
 /* Goals.jsx */
 .about__goals {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 1.5rem;
   }
@@ -136,7 +136,7 @@
 /* Interests.jsx */
 .about__interests {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 1.5rem;
   }
