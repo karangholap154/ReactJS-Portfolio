@@ -1,17 +1,17 @@
 .scrollup {
     position: fixed;
-    right: 2.5rem;
+    right: 1rem;
     bottom: -20%;
     background-color: var(--title-color);
     opacity: 0.8;
-    padding: 0.3rem 0.75rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 0.4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
 }
 
 .scrollup__icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--container-color);
 }
 
@@ -20,36 +20,36 @@
 }
 
 .show-scroll {
-    bottom: 2rem;
+    bottom: 4rem;
 }
 
 @media screen and (max-width: 992px) {
-    .scrollup {
-        right: 1.75rem;
-    }
-
-    .show-scroll {
-        bottom: 1.75rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .scrollup {
-        right: 1.5rem;
-    }
-    
-    .show-scroll {
-        bottom: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
     .scrollup {
         right: 1rem;
     }
 
     .show-scroll {
-        bottom: 1rem;
+        bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .scrollup {
+        right: 0.75rem;
+    }
+    
+    .show-scroll {
+        bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .scrollup {
+        right: 0.75rem;
+    }
+
+    .show-scroll {
+        bottom: 4rem;
 }
 }
 

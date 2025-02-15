@@ -1,10 +1,10 @@
 .darkmode-button {
     position: fixed;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 4rem;
+    left: 1rem;
     background-color: var(--title-color);
     opacity: 0.8;
-    padding: 0.3rem 0.75rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 0.4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
@@ -15,28 +15,28 @@
 }
 
 .darkmode-icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--container-color);
 }
 
 @media screen and (max-width: 992px) {
     .darkmode-button {
-        bottom: 1.75rem;
-        left: 1.75rem;
+        bottom: 4rem;
+        left: 1rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .darkmode-button {
-        bottom: 1.5rem;
-        left: 1.5rem;
+        bottom: 4rem;
+        left: 0.75rem;
     }
 }
 
 @media screen and (max-width: 576px) {
     .darkmode-button {
-        bottom: 1rem;
-        left: 1rem;
+        bottom: 4rem;
+        left: 0.75rem;
     }
 }
 

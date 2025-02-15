@@ -1,5 +1,5 @@
 .home__container {
-    row-gap: 7rem;
+    height: 100vh;
 }
 
 .home__content {
@@ -73,7 +73,7 @@
 }
 
 .home__scroll {
-    margin-left: 9.25rem;
+    margin-left: 6.25rem;
 }
 
 .wheel {
@@ -160,7 +160,8 @@
     }
 
     .home__scroll {
-        display: none;
+        /* display: none; */
+        margin-left: 0;
     }
 
     .home__title {
