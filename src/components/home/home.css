@@ -169,6 +169,17 @@
     }
   }
   
+  @media screen and (max-width: 576px) {
+    .home__scroll {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        align-content: center;
+        row-gap: 4rem;
+    }
+  }
 
   
   /* For small devices */
