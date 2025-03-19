@@ -13,6 +13,7 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
+  --background-color: hsla(var(--hue), var(--sat), 99%, 0.9);
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
@@ -75,6 +76,7 @@
   --title-color-dark: #ccc;
   --text-color: #fff;
   --border-color: var(--border-color-dark);
+  --background-color: hsla(0, 0%, 17%, 0.9);
 }
 
 .darkmode .section__title {
