@@ -1,18 +1,20 @@
 import React from 'react';
 import './projects.css';
+import project1Img from '../../assets/project_1.png';
+import project2Img from '../../assets/project_2.png';
 
 export const Projects = () => {
     const projects = [
         {
         id: 1,
-        image: 'src/assets/project_1.png',
+        image: project1Img,
         title: 'Personal Portfolio',
         description: 'Designed and developed a responsive personal portfolio website to highlight projects, skills, and professional experience.',
         link: 'https://karangholap.vercel.app/',
         },
         {
         id: 2,
-        image: 'src/assets/project_2.png',
+        image: project2Img,
         title: 'Task Manager',
         description: 'Spearheaded the development of a task management system for efficient task creation, assignment, and tracking, enhancing team productivity.',
         link: 'https://taskmasterwithreact.vercel.app/',
