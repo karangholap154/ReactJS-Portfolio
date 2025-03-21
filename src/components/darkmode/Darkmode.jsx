@@ -2,20 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './darkmode.css';
 
 export const Darkmode = () => {
-  const [isDarkmode, setIsDarkmode] = useState(false);
+  const [isDarkmode, setIsDarkmode] = useState(() => {
+    const storedDarkmode = localStorage.getItem('darkmode');
+    return storedDarkmode === 'true';
+  });
 
   useEffect(() => {
-    const storedDarkmode = localStorage.getItem('darkmode');
-    if (storedDarkmode) {
-      setIsDarkmode(storedDarkmode === 'true');
-      document.body.classList.toggle('darkmode', storedDarkmode === 'true');
-    }
-  }, []);
+    document.body.classList.toggle('darkmode', isDarkmode);
+    localStorage.setItem('darkmode', isDarkmode.toString());
+  }, [isDarkmode]);
 
   const toggleDarkmode = () => {
     setIsDarkmode(!isDarkmode);
-    document.body.classList.toggle('darkmode');
-    localStorage.setItem('darkmode', isDarkmode.toString());
   };
 
   return (
