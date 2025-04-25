@@ -2,6 +2,7 @@ import React from 'react';
 import './projects.css';
 import project1Img from '../../assets/project_1.png';
 import project2Img from '../../assets/project_2.png';
+import project3Img from '../../assets/project_3.png';
 
 export const Projects = () => {
     const projects = [
@@ -18,6 +19,13 @@ export const Projects = () => {
         title: 'Task Manager',
         description: 'Spearheaded the development of a task management system for efficient task creation, assignment, and tracking, enhancing team productivity.',
         link: 'https://taskmasterwithreact.vercel.app/',
+        },
+        {
+            id: 3,
+            image: project3Img,
+            title: 'Private Academy Engg.',
+            description: 'Developed a comprehensive website for an engineering students, showcasing important study materials, resources, and updates.',
+            link: 'https://www.privateacademy.in/',
         },
     ];
 

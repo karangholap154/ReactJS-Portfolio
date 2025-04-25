@@ -63,7 +63,7 @@ export const Contact = () => {
 
                 <div className='contact__info'>
                     <div className='contact__card'>
-                        <i className="bx bx-mail-send contact__card-icon"></i>
+                        <i className="bx bx-mail-send bx-flashing contact__card-icon"></i>
                         <h5 className='contact__card-title'>Email</h5>
                         <span className='contact__card-data'>karangholap.work@gmail.com</span>
 
@@ -74,7 +74,7 @@ export const Contact = () => {
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-linkedin contact__card-icon"></i>
+                        <i className="bx bxl-linkedin bx-burst contact__card-icon"></i>
                         <h5 className='contact__card-title'>LinkedIn</h5>
                         <span className='contact__card-data'>in/karangholap</span>
 
@@ -85,7 +85,7 @@ export const Contact = () => {
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-twitter contact__card-icon"></i>
+                        <i className="bx bxl-twitter bx-fade-right contact__card-icon"></i>
                         <h5 className='contact__card-title'>X(Twitter)</h5>
                         <span className='contact__card-data'>@karangholap_</span>
 
@@ -96,7 +96,7 @@ export const Contact = () => {
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-github contact__card-icon"></i>
+                        <i className="bx bxl-github bx-tada contact__card-icon"></i>
                         <h5 className='contact__card-title'>GitHub</h5>
                         <span className='contact__card-data'>@karangholap154</span>
 
@@ -107,7 +107,7 @@ export const Contact = () => {
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-medium contact__card-icon"></i>
+                        <i className="bx bxl-medium bx-fade-left contact__card-icon"></i>
                         <h5 className='contact__card-title'>Medium</h5>
                         <span className='contact__card-data'>@karangholap_</span>
 
@@ -118,7 +118,7 @@ export const Contact = () => {
                     </div>
 
                     <div className='contact__card'>
-                        <i className="bx bxl-instagram contact__card-icon"></i>
+                        <i className="bx bxl-instagram bx-spin contact__card-icon"></i>
                         <h5 className='contact__card-title'>Instagram</h5>
                         <span className='contact__card-data'>@karangholap_</span>
 

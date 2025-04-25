@@ -30,7 +30,7 @@
     background-color: var(--container-color);
     border: 1px solid var(--border-color);
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
 
 }
 
@@ -40,7 +40,7 @@
     background-color: var(--container-color);
     border: 1px solid var(--border-color);
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .about__background-title {
@@ -89,7 +89,7 @@
     background-color: var(--container-color);
     border: 1px solid var(--border-color);
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
   }
   
   .about__goals-title {
@@ -138,7 +138,7 @@
     background-color: var(--container-color);
     border: 1px solid var(--border-color);
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
   }
   
   .about__interests-title {
