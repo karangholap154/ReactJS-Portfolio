@@ -5,7 +5,7 @@ export const Data = () => {
     <div className='home__data'>
         <h3 className='home__greet'>Namaste!<span class="hand__wave">👋</span></h3>
         <h1 className='home__title'>I'm Karan Gholap</h1>
-        <p className='home__description'>A passionate student and developer 💻, dedicated to solving problems and assisting others by harnessing the power of software and web development 🌐."</p>
+        <p className='home__description'>Passionate <span className='job-role'>Frontend Developer</span> 🌐, transforming ideas into seamless, responsive, and visually appealing web applications with modern technologies.</p>
 
         <a href='#contact' className='button button--flex'>
             Say Hello

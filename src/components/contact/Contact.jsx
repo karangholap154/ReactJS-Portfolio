@@ -105,28 +105,6 @@ export const Contact = () => {
                             <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                         </a>
                     </div>
-
-                    <div className='contact__card'>
-                        <i className="bx bxl-medium contact__card-icon"></i>
-                        <h5 className='contact__card-title'>Medium</h5>
-                        <span className='contact__card-data'>@karangholap_</span>
-
-                        <a href="https://medium.com/@karangholap_" className='contact__button' target='_blank'>
-                            Subscribe 
-                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
-                        </a>
-                    </div>
-
-                    <div className='contact__card'>
-                        <i className="bx bxl-instagram contact__card-icon"></i>
-                        <h5 className='contact__card-title'>Instagram</h5>
-                        <span className='contact__card-data'>@karangholap_</span>
-
-                        <a href="https://www.instagram.com/karangholap_/" className='contact__button' target='_blank'>
-                            Follow 
-                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
