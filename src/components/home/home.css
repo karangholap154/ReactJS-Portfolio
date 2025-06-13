@@ -1,202 +1,228 @@
-.home__container {
-    height: 100vh;
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.home__content {
-    grid-template-columns: 100px repeat(2, 1fr);
-    padding-top: 5.5rem;
-    column-gap: 0.5rem;
-    align-items: center;
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.home__social {
-    display: grid;
-    grid-template-columns: max-content;
-    row-gap: 1 rem;
-}
-
-.job-role {
+.job__role {
     font-weight: bold;
     color: var(--title-color);
 }
 
-.home__social-icon {
-    font-size: 2rem;
-    color: var(--title-color);
+.home__info {
+  flex: 1 1 350px;
 }
 
-.home__social-icon:hover {
-    color: var(--title-color-dark);
+.home__name {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
 }
 
-.home__title {
-    font-size: var(--big-font-size);
-    margin-bottom: var(--mb-0-25);
-    white-space: nowrap;
+.home__role {
+  font-size: var(--h4-font-size);
 }
 
-.hand__wave {
-    animation-name: wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
+.home-contact-row {
+  display: flex;
+  gap: 20px;
+  margin: 16px 0;
+  flex-wrap: wrap;
 }
 
-@keyframes wave-animation {
-
-    0% { transform: rotate( 0.0deg) }
-    10% { transform: rotate(14.0deg) }  
-    20% { transform: rotate(-8.0deg) }
-    30% { transform: rotate(14.0deg) }
-    40% { transform: rotate(-4.0deg) }
-    50% { transform: rotate(10.0deg) }
-    60% { transform: rotate( 0.0deg) }  
-    100% { transform: rotate( 0.0deg) }
+.home-contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--small-font-size);
 }
 
-.home__greet {
-    position: relative;
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-semi-bold);
+.home__desc {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1-5);
 }
 
-.home__description {
-    max-width: 400px;
-    margin-bottom: var(--mb-3);
+.home__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-.home__img {
-    background: url(../../assets/Profile.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    order: 1;
-    justify-self: center;
-    width: 300px;
-    height: 300px;
+.btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.home__scroll {
-    margin-left: 6.25rem;
+.primary {
+  background-color: var(--title-color);
+  color: var(--container-color);
 }
 
-.wheel {
-    animation: scroll 2s infinite;
+.icon-btn {
+  background-color: var(--container-color);
+  color: var(--title-color);
+  border: 1px solid var(--border-color);
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateY(0);
-    }
-    30% {
-        transform: translateY(3.75rem);
-    }
+.home__stack {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-content: start;
+  flex: 1 1 250px;
 }
 
-.home__scroll-name {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-    margin-left: 2px;
+.stack__item {
+  background-color: var(--container-color);
+  min-height: 100px;
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  border-radius: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
 }
 
-.home__scroll-arrow {
-    font-size: 1.25rem;
-    color: var(--title-color);
-}
-
-/************************************/
+/* Tablets & below (≤ 992px) */
 @media screen and (max-width: 992px) {
-    .home__content {
-        grid-template-columns: 100px repeat(2, 1fr);
-        column-gap: 1.25rem;
-    }
-
-    .home__hand {
-        width: 26px;
-        height: 26px;
-    }
-
-    .home__subtitle {
-        padding-left: 3.75rem;
-        margin-bottom: var(--mb-1);
-    }
-
-    .home__subtitle::before {
-        top: 0.8rem;
-        width: 42px;
-    }
-
-    .home__description {
-        max-width: initial;
-        margin-bottom: var(--mb-2-5);
-    }
-
-    .home__img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .home__scroll {
-        margin-left: 7.5rem;
-    }
+  .stack__item {
+    min-height: 90px;
+    padding: 0.75rem;
+  }
 }
-  
-  /* For medium devices */
-  @media screen and (max-width: 768px) {
-    .home__content {
-        grid-template-columns: 0.5fr 3fr;
-        padding-top: 3.5rem;
-    }
 
-    .home__img {
-        order: initial;
-        justify-self: initial;
-    }
-
-    .home__data {
-        grid-column: 1/3;
-    }
-
-    .home__img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .home__scroll {
-        /* display: none; */
-        margin-left: 0;
-    }
-
-    .home__title {
-        white-space: nowrap;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .home__scroll {
-        display: none;
-    }
-
-    .grid {
-        display: grid;
-        align-content: center;
-        row-gap: 4rem;
-    }
+/* Mobile (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .home__name {
+    font-size: var(--big-font-size);
   }
 
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
-    .home__img {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .home__hand {
-        width: 22px;
-        height: 22px;
-    }
+  .home__role {
+    font-size: var(--h2-font-size);
   }
-  
+
+  .home-contact {
+    font-size: var(--normal-font-size);
+  }
+
+  .home__desc {
+    font-size: var(--normal-font-size);
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: var(--small-font-size);
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .home {
+    padding-top: 5rem;
+  }
+}
+
+/* Add transition for smooth effects */
+.stack__item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* On hover: scale slightly and lift the card */
+.stack__item:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add icon animation on hover */
+.stack__item svg {
+  transition: transform 0.4s ease;
+}
+
+.stack__item:hover svg {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.home__stack {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.8s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Continuous subtle float animation for React Icons */
+.stack__item svg {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Keyframes for floating */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.stack__item:nth-child(1) svg {
+  animation: rotate 3s ease-in-out infinite;
+}
+
+.stack__item:nth-child(2) svg {
+  animation: float 4s linear infinite;
+}
+
+.stack__item:nth-child(3) svg {
+  animation: float 3s ease-in-out infinite;
+}
+
+.stack__item:nth-child(4) svg {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
