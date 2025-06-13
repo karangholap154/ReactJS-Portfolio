@@ -1,0 +1,7 @@
+body {
+  scrollbar-width: 0; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
