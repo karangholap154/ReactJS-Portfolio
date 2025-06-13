@@ -3,6 +3,7 @@ import "./projects.css";
 import project1Img from "../../assets/project_1.png";
 import project2Img from "../../assets/project_2.png";
 import project3Img from "../../assets/project_3.png";
+import project4Img from "../../assets/project_4.png";
 
 export const Projects = () => {
   const projects = [
@@ -13,7 +14,14 @@ export const Projects = () => {
       description:
         "Designed and developed a responsive personal portfolio website to highlight projects, skills, and professional experience.",
       link: "https://karangholap.vercel.app/",
-      techStack: ["React.js", "CSS", "JavaScript", "Framer Motion"],
+      github: "https://github.com/karangholap154/ReactJS-Portfolio",
+      techStack: [
+        "React.js",
+        "JavaScript",
+        "EmailJS",
+        "Framer Motion",
+        "React Router DOM",
+      ],
     },
     {
       id: 2,
@@ -22,6 +30,7 @@ export const Projects = () => {
       description:
         "Spearheaded the development of a task management system for efficient task creation, assignment, and tracking, enhancing team productivity.",
       link: "https://taskmasterwithreact.vercel.app/",
+      github: "https://github.com/karangholap154/TaskMaster",
       techStack: ["React.js", "Tailwind CSS", "JavaScript", "Framer Motion"],
     },
     {
@@ -31,7 +40,30 @@ export const Projects = () => {
       description:
         "Developed a comprehensive website for an engineering students, showcasing important study materials, resources, and updates.",
       link: "https://www.privateacademy.in/",
-      techStack: ["React.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+      github: "https://github.com/karangholap154/simple-pvt-web",
+      techStack: [
+        "React.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Framer Motion",
+        "React Router DOM",
+      ],
+    },
+    {
+      id: 4,
+      image: project4Img,
+      title: "Smart Tools Hub",
+      description:
+        "Free online tools in one place. Powerful calculators, converters, and utilities designed to boost your productivity.",
+      link: "https://www.smarttoolshub.in/",
+      github: "https://github.com/karangholap154/smarttoolshub",
+      techStack: [
+        "React.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "React Router DOM",
+        "EmailJS",
+      ],
     },
   ];
 
@@ -44,7 +76,6 @@ export const Projects = () => {
 
       <div className="projects__container container grid">
         {projects.map((project) => (
-          // ...existing code...
           <div key={project.id} className="project__item">
             <div className="project__content">
               <img
@@ -63,18 +94,28 @@ export const Projects = () => {
                   </span>
                 ))}
               </div>
-              <a
-                href={project.link}
-                className="project__live-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-                <i className="uil uil-corner-down-right-alt project__link-icon"></i>
-              </a>
+              <div style={{ display: "flex", gap: "0.5rem", justifyContent: "space-between" }}>
+                <a
+                  href={project.link}
+                  className="project__live-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live
+                  <i className="uil uil-corner-down-right-alt project__link-icon"></i>
+                </a>
+                <a
+                  href={project.github}
+                  className="project__live-btn project__github-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                  <i className="uil uil-github project__link-icon"></i>
+                </a>
+              </div>
             </div>
           </div>
-          // ...existing code...
         ))}
       </div>
     </section>
